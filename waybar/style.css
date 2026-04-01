@@ -1,0 +1,89 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Lexend, "JetBrainsMono NFP";
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 0;
+}
+
+/* Make the main bar container invisible */
+window#waybar {
+  background-color: transparent;
+}
+
+/* Style for every individual module block */
+#workspaces,
+#window,
+#mpris,
+#cpu,
+#memory,
+#pulseaudio,
+#custom-language,
+#clock,
+#tray,
+#custom-notification,
+#battery,
+#custom-power {
+  background-color: #1e1e2e; /* Catppuccin Mocha Base */
+  color: #cdd6f4;
+  border-radius: 24px; /* This makes them "fully round" pills */
+  padding: 0px 15px;
+  margin: 0px 4px; /* Space between the floating blocks */
+}
+
+/* --- Specific Module Tweaks --- */
+
+#workspaces {
+  padding: 0 5px; /* Less padding because buttons have their own */
+}
+
+#workspaces button {
+  padding: 0px 10px;
+  margin: 4px 2px;
+  border-radius: 24px;
+  background-color: #313244;
+  color: #cdd6f4;
+  transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+  background-color: #89b4fa;
+  color: #11111b;
+  min-width: 40px;
+}
+
+#workspaces button:hover {
+  background-color: #f5e0dc;
+  color: #11111b;
+}
+
+/* MPRIS/Spotify specific pill color */
+#mpris.playing { color: #a6e3a1; }
+#mpris.paused { color: #9399b2; }
+
+/* Visual colors for modules */
+#cpu { color: #94e2d5; }
+#memory { color: #cba6f7; }
+#clock { color: #74c7ec; }
+#pulseaudio { color: #b4befe; }
+#battery { color: #a6e3a1; }
+#battery.charging { color: #f9e2af; }
+#battery.critical:not(.charging) {
+  background-color: #f38ba8;
+  color: #11111b;
+}
+
+/* Power Button - Make it a perfect circle */
+#custom-power {
+  color: #f38ba8;
+  padding: 0 12px;
+  margin-right: 0;
+}
+
+/* Tooltip styling */
+tooltip {
+  background: #181825;
+  border-radius: 12px;
+  border: 1px solid #89b4fa;
+}

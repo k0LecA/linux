@@ -1,0 +1,50 @@
+/* ~/.config/wofi/style.css */
+
+window {
+    margin: 0px;
+    border: 2px solid #cba6f7;
+    background-color: rgba(30, 30, 46, 0.8); /* 80% Opacity */
+    border-radius: 15px; /* Rounded corners for the main window */
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16px;
+}
+
+#input {
+    margin: 10px;
+    border: none;
+    border-radius: 10px; /* Rounded search bar */
+    color: #cdd6f4;
+    background-color: rgba(49, 50, 68, 0.9);
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent; /* Must be transparent for window bg to show */
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #cdd6f4;
+}
+
+#entry:selected {
+    background-color: rgba(203, 166, 247, 0.4); /* Highlight transparency */
+    border-radius: 10px; /* Rounded selection bar */
+}
+
+#text:selected {
+    color: #ffffff;
+}

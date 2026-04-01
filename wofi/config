@@ -1,0 +1,6 @@
+show=drun
+width=500
+height=400
+prompt=Search...
+allow_images=true
+always_parse_dot_desktop=true
