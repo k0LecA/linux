@@ -1,3 +1,5 @@
+![Example](./example.png)
+
 # Dotfiles Dependencies
 
 ## Core (pacman)
